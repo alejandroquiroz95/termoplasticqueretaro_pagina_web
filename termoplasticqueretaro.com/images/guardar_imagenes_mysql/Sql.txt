@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS galeria ;
+USE galeria;
+
+CREATE TABLE `imagenes` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(30) NOT NULL,
+  `imagen` longtext NOT NULL,
+  PRIMARY KEY (`id`,`nombre`),
+  UNIQUE KEY `nombre_UNIQUE` (`nombre`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
